@@ -19,6 +19,12 @@ app.use(express.json());
 app.use(express.static('public'));
 
 //connect mongoose here
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/trip-logger', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+});
 
 app.use(require("./server/routes/apiRoutes"));
 app.use(require("./server/routes/htmlRoutes"));
