@@ -31,7 +31,13 @@ const tripSchema = new Schema ({
         }
     ]
 
-});
+},
+{
+    toJSON: {
+        virtuals: true
+    }
+}
+);
 
 const trip = mongoose.model("Trip", tripSchema);
 
