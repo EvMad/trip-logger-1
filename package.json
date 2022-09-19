@@ -2,5 +2,8 @@
     "name": "trip_logger",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js"
+    "main": "server.js",
+    "dependencies": {
+        "morgan": "^1.10.0"
+    }
 }
