@@ -21,3 +21,9 @@ router.post("/api/trips", ({ body }, res) => {
         res.json(err);
     });
 });
+
+// put
+
+// delete 
+
+module.exports = router;
