@@ -17,3 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static('public'));
+
+//connect mongoose here
+
+app.use(require("./server/routes/apiRoutes"));
+app.use(require("./server/routes/htmlRoutes"));
