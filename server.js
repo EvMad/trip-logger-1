@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+
 app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
@@ -28,3 +29,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/trip-logger', {
 
 app.use(require("./server/routes/apiRoutes"));
 app.use(require("./server/routes/htmlRoutes"));
+
+
+app.listen(PORT, () => {
+    console.log(`Now listening on port ${PORT}!`)
+})
