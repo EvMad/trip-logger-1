@@ -20,6 +20,11 @@ body {
     justify-content: center;
 }
 
+.container > h1 {
+    padding-top: 20px;
+    color: var(--brown);
+}
+
 .card {
     max-width: 70vw;
     max-height: 70vh;
