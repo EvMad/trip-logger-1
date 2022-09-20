@@ -21,12 +21,17 @@ body {
 }
 
 .container > h1 {
+    font-family: 'Abril Fatface', cursive;
     padding-top: 20px;
     color: var(--brown);
 }
 
 .card {
+    padding: 10px;
     max-width: 70vw;
     max-height: 70vh;
     color: var(--brown);
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    border: 2px solid var(--blue);
 }
