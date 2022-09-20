@@ -2,6 +2,13 @@
     margin: 0;
 }
 
+:root {
+    --green: #ADBF6B;
+    --blue: #8AA6BF;
+    --brown: #BF4F26;
+    --white: #F2F2F2;
+}
+
 .container {
     display: flex;
     flex-direction: column;
