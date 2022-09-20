@@ -24,10 +24,12 @@ body {
     font-family: 'Abril Fatface', cursive;
     padding: 20px;
     color: var(--brown);
+    border-bottom: 2px solid var(--green);
 }
 
 .card {
     padding: 10px;
+    margin-top: 20px;
     max-width: 70vw;
     max-height: 70vh;
     color: var(--brown);
