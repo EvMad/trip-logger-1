@@ -36,11 +36,19 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: small;
     border: 2px solid var(--blue);
+    text-align: center;
+}
+
+.formCard {
+    padding-bottom: 20px;
+    font-size: medium;
+
 }
 
 .btn {
     color: var(--blue);
     font-family: 'Abril Fatface', cursive;
+    cursor: pointer;
 
 }
 
