@@ -22,7 +22,7 @@ body {
 
 .container > h1 {
     font-family: 'Abril Fatface', cursive;
-    padding-top: 20px;
+    padding: 20px;
     color: var(--brown);
 }
 
