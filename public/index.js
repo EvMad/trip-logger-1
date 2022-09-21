@@ -3,6 +3,7 @@ init();
 const nextBtn = document.querySelector("#next");
 const dateInput = document.querySelector("#date");
 const countryInput = document.querySelector("#country");
+const regionInput = document.querySelector("#region");
 
 
 // async function to recall trip data on init 
