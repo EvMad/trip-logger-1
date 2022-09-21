@@ -44,6 +44,14 @@ async function handleFormSubmit(event) {
 
     await API.addTrip(tripData);
     clearInputs();
+    //add toast here
 
-    // await add trip, clear inputs, toast
+    
+}
+
+function clearInputs() {
+    dateInput.value = "";
+    countryInput.value = "";
+    regionInput.value = "";
+    cityInput.value = "";
 }
