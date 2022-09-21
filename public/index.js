@@ -8,7 +8,7 @@ const countryInput = document.querySelector("#country");
 const regionInput = document.querySelector("#region");
 const cityInput = document.querySelector("#city");
 
-
+let tripInput = null;
 
 
 // async function to recall trip data on init 
@@ -35,7 +35,7 @@ async function handleFormSubmit(event) {
 
     let tripData = {};
 
-    if 
+    if ()
 
     // await add trip, clear inputs, toast
 }
