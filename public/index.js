@@ -35,7 +35,9 @@ async function handleFormSubmit(event) {
 
     let tripData = {};
 
-    if ()
+    if (tripInput !== null) {
+        tripData.country.date = dateInput.ariaValueMax.trim();
+    }
 
     // await add trip, clear inputs, toast
 }
