@@ -38,6 +38,7 @@ async function handleFormSubmit(event) {
     if (tripInput !== null) {
         tripData.country.date = dateInput.value.trim();
         tripData.country.countryName = countryInput.value.trim();
+        tripData.country.region = regionInput.value.trim();
     }
 
     // await add trip, clear inputs, toast
