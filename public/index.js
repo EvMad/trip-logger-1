@@ -55,3 +55,5 @@ function clearInputs() {
     regionInput.value = "";
     cityInput.value = "";
 }
+
+// event listeners for add button handleFormSubmit and clearInputs

@@ -1,0 +1,1 @@
+// function to display all trip data 
