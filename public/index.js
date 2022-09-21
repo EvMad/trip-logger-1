@@ -4,6 +4,7 @@ const nextBtn = document.querySelector("#next");
 const dateInput = document.querySelector("#date");
 const countryInput = document.querySelector("#country");
 const regionInput = document.querySelector("#region");
+const cityInput = document.querySelector("#city");
 
 
 // async function to recall trip data on init 
