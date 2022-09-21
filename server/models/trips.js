@@ -5,8 +5,11 @@ const Schema = mongoose.Schema;
 const tripSchema = new Schema ({
 
     date: {
-        type: Date,
-        default: () => new Date()
+        // type: Date,
+        // default: () => new Date()
+        type: String,
+        trim: true,
+        required: "Enter date of trip"
     },
 
     country: [
