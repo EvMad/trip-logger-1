@@ -15,16 +15,16 @@ let tripInput = null;
  
      // async function to create Trip
 
-     async function createTrip(data = {}) {
-        const res = await fetch("api/trips", {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: { "Content-Type": "application/json"}
-        });
-        const json = await res.json();
+    //  async function createTrip(data = {}) {
+    //     const res = await fetch("api/trips", {
+    //         method: "POST",
+    //         body: JSON.stringify(data),
+    //         headers: { "Content-Type": "application/json"}
+    //     });
+    //     const json = await res.json();
         
-        return json;
-        };
+    //     return json;
+    //     };
 
 // async function to recall trip data on init 
 
@@ -35,7 +35,7 @@ async function initTrips() {
   
 
     if (location.search.split("=")[1] === undefined) {
-        trip = await API.createTrip()
+        trip = await API.addTrip()
         console.log(trip)
     }
     if (trip) {
