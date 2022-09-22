@@ -1,5 +1,7 @@
 // init();
 
+
+
 // import trip model
 
 const addBtn = document.querySelector("#add");
@@ -17,7 +19,7 @@ async function initTrips() {
     let trip;
 
     if (location.search.split("=")[1] === undefined) {
-        trip = await API.createTrip()
+        // trip = await API.createTrip()
         console.log(trip)
     }
     if (trip) {

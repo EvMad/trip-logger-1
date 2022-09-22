@@ -31,4 +31,4 @@ const API = {
 
 };
 
-// module export API 
+module.exports = API;
