@@ -12,11 +12,27 @@ const cityInput = document.querySelector("#city");
 
 let tripInput = null;
 
+ 
+     // async function to create Trip
+
+     async function createTrip(data = {}) {
+        const res = await fetch("api/trips", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json"}
+        });
+        const json = await res.json();
+        
+        return json;
+        };
 
 // async function to recall trip data on init 
 
 async function initTrips() {
     let trip;
+
+
+  
 
     if (location.search.split("=")[1] === undefined) {
         trip = await API.createTrip()
