@@ -1,4 +1,4 @@
-init();
+// init();
 
 // import trip model
 
