@@ -14,7 +14,7 @@ const API = {
 
         return json;
 
-    }, addTrip(data) {
+    }, async addTrip(data) {
         const id = location.search.split("=")[1];
 
         const res = await fetch("api/trips/" + id, {
@@ -31,4 +31,4 @@ const API = {
 
 };
 
-module.exports = API;
+// module.exports = API;
