@@ -43,6 +43,11 @@ async function handleFormSubmit(event) {
     }
 
     await API.addTrip(tripData);
+
+
+    addBtn.addEventListener("click", handleFormSubmit);
+
+
     clearInputs();
     //add toast here
 
