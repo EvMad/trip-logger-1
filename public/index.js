@@ -2,7 +2,7 @@ init();
 
 // import trip model
 
-const nextBtn = document.querySelector("#next");
+const addBtn = document.querySelector("#add");
 const dateInput = document.querySelector("#date");
 const countryInput = document.querySelector("#country");
 const regionInput = document.querySelector("#region");
@@ -49,6 +49,10 @@ async function handleFormSubmit(event) {
     
 }
 
+// event listeners for add button handleFormSubmit and clearInputs
+
+
+
 function clearInputs() {
     dateInput.value = "";
     countryInput.value = "";
@@ -56,4 +60,5 @@ function clearInputs() {
     cityInput.value = "";
 }
 
-// event listeners for add button handleFormSubmit and clearInputs
+
+
