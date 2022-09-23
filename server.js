@@ -1,7 +1,7 @@
-// const express = require('express');
-import express from 'express';
-// const mongoose = require('mongoose');
-import mongoose from 'mongoose';
+const express = require('express');
+// import express from 'express';
+const mongoose = require('mongoose');
+// import mongoose from 'mongoose';
 const logger = require("morgan");
 // import morgan from 'morgan';
 
