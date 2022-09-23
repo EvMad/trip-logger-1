@@ -2,8 +2,8 @@
 import express from 'express';
 // const mongoose = require('mongoose');
 import mongoose from 'mongoose';
-// const logger = require("morgan");
-import morgan from 'morgan';
+const logger = require("morgan");
+// import morgan from 'morgan';
 
 require('dotenv').config();
 
