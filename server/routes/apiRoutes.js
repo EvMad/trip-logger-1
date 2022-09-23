@@ -1,7 +1,8 @@
 // import express from 'express';
 const express = require('express');
 const router = express.Router();
-import Trip from '../models/trips';
+// import Trip from '../models/trips';
+const Trip = require("../models/trips");
 
 // get
 router.get("/api/trips", (req, res) => {
