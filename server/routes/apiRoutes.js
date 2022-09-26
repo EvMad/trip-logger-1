@@ -14,7 +14,7 @@ router.get("/api/trips", (req, res) => {
 
 // post
 
-router.post("/api/trips", ({ body }, res) => {
+router.post("/api/trips/", ({ body }, res) => {
     Trip.create(body)
     .then(newTrip => {
         res.json(newTrip);
@@ -25,6 +25,18 @@ router.post("/api/trips", ({ body }, res) => {
 });
 
 // put
+
+router.put("/api/trips/:id", ( req, res) => {
+    Trip.findByIdAndUpdate(
+        { _id: req.params.id }, { $push: { trips: req.body } }, { new: true, runValidators: true }
+    )
+    .then(updateID => {
+        res.json(updateId);
+    })
+    .catch(err => {
+        res.json(err);
+    });
+});
 
 
 
