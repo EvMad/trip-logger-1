@@ -28,7 +28,7 @@ router.post("/api/trips/", ({ body }, res) => {
 
 router.put("/api/trips/:id", ( req, res) => {
     Trip.findByIdAndUpdate(
-        { _id: req.params.id }, { $push: { trips: req.body } }, { new: true, runValidators: true }
+        { _id: req.params.id }, { $push: { country: req.body } }, { new: true, runValidators: true }
     )
     .then(updateID => {
         res.json(updateId);
