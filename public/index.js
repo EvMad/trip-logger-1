@@ -35,13 +35,13 @@ async function initTrips() {
   
 
     if (location.search.split("=")[1] === undefined) {
-        trip = await API.addTrip()
-        console.log(trip)
+        trip = await API.addTrip();
+        console.log(trip);
     }
     if (trip) {
         location.search = "?id" + trip._id;
     }
-}
+};
 
 initTrips();
 
