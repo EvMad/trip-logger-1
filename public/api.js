@@ -17,7 +17,7 @@ const API = {
     }, async addTrip(data) {
         const id = location.search.split("=")[1];
 
-        // undefined error on page load
+        // Failed to fetch: 
         const res = await fetch("/api/trips/" + id, {
             
             method: "PUT",

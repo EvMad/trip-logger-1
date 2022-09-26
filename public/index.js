@@ -36,7 +36,7 @@ async function initTrips() {
 
     if (location.search.split("=")[1] === undefined) {
         //import from api.js ?
-        trip = await API.addTrip();
+        // trip = await API.addTrip();
         console.log(trip);
     }
     if (trip) {
