@@ -1,5 +1,6 @@
 // import express from 'express';
 const express = require('express');
+// const router = require('express').Router();
 const router = express.Router();
 // import Trip from '../models/trips';
 const Trip = require("../models/trips");
