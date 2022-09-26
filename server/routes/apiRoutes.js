@@ -38,8 +38,16 @@ router.put("/api/trips/:id", ( req, res) => {
     });
 });
 
-
-
 // delete 
+
+router.delete("/api/trips", ({ body }, res) => {
+    Trip.findByIdAndDelete(body.id)
+    .then(() => {
+        res.json(true);
+    })
+    .catch(err => {
+        res.json(err);
+    });
+});
 
 module.exports = router;
