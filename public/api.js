@@ -3,7 +3,7 @@ const API = {
     async getPreviousTrips() {
         let res;
         try {
-            res = await fetch("api/trips");
+            res = await fetch("/api/trips/");
         } catch (err) {
             console.log(err);
         }
@@ -18,7 +18,8 @@ const API = {
         const id = location.search.split("=")[1];
 
         // undefined error on page load
-        const res = await fetch("api/trips/" + id, {
+        const res = await fetch("/api/trips/" + id, {
+            
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
@@ -28,7 +29,7 @@ const API = {
 
         return json;
 
-    },
+    }
 
 };
 
