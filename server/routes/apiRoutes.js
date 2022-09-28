@@ -6,7 +6,7 @@ const router = express.Router();
 const Trip = require("../models/trips");
 
 // get
-router.get("/api/trips", (req, res) => {
+router.get("/api/trips/", (req, res) => {
     Trip([])
     .catch(err => {
         res.json(err);
