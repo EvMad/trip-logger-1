@@ -1,5 +1,5 @@
 // init();
-
+initTrips();
 // import trip model
 
 const addBtn = document.querySelector("#add");
@@ -42,7 +42,7 @@ async function initTrips() {
     }
 };
 
-initTrips();
+
 
 
 // form submit function
