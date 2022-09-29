@@ -14,22 +14,23 @@ const API = {
 
         return json;
 
-    }, async addTrip(data) {
-        const id = location.search.split("=")[1];
-
-        // Failed to fetch: 
-        const res = await fetch("/api/trips/" + id, {
-            
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-        });
-
-        const json = await res.json();
-
-        return json;
-
     }
+    // , async addTrip(data) {
+    //     const id = location.search.split("=")[1];
+
+    //     // Failed to fetch: 
+    //     const res = await fetch("/api/trips/" + id, {
+            
+    //         method: "PUT",
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify(data)
+    //     });
+
+    //     const json = await res.json();
+
+    //     return json;
+
+    // }
 
 };
 

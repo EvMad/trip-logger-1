@@ -30,7 +30,7 @@ async function initTrips() {
     let trip;
 
 
-  
+  // should be await getPreviousTrips ??
 
     if (location.search.split("=")[1] === undefined) {
         //import from api.js ?
